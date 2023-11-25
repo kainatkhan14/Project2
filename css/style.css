@@ -1,0 +1,438 @@
+/* CSS for all pages */
+html{
+  font-size: 16px; 
+  line-height: 1.2em;  
+  text-rendering: optimizeLegibility;
+  height: 100%;
+  padding-bottom: 1.2em; 
+}
+
+h1{
+  font-size: 1.575em; 
+  line-height: 1.2em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em; 
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.476em; 
+  line-height: 1.2em; 
+  padding-top: 1.2em;
+  padding-bottom: 1.2em; 
+}
+
+h3{
+  font-size: 1.383em; 
+  line-height: 1.2em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em; 
+  color: #E1CA96; 
+}
+
+p{
+  padding-top: 1.2em;
+  padding-bottom: 1.2em; 
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0, 43, 128);
+}
+
+#contact-link{
+  color: #fff;
+  text-decoration: underline;
+}
+
+ul{
+  list-style-type: none;
+}
+
+nav {
+  overflow: hidden;
+  position: relative;
+}
+
+nav ul li{
+  float: none;
+}
+
+ul li{
+  float: left;
+  padding: 14px 16px;
+}
+
+ul li a{
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 14px 16px;
+}
+
+nav a {
+  padding: 14px 16px;
+  color: #fff;
+}
+
+nav #myLinks {
+  display: none;
+  text-align: center;
+  background-color: rgb(0, 43, 128);
+}
+
+nav a.icon {
+  background: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 10%;
+}
+
+ul li a:hover {
+  color: #0b3f9d;
+  background: none;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#logo{
+  margin-left: 10%;
+}
+
+footer{
+  clear: both;
+  width: 100%;
+  background-color: rgb(0, 43, 128);
+  overflow: hidden;
+}
+
+footer a{
+  color: #fff;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+#f-forms{
+  float: left;
+}
+
+#socials{
+  float: right;
+}
+
+footer img {
+  padding: 0;
+}
+
+/* CSS for index.html */
+
+#row{
+  background-color: rgb(0, 43, 128);
+  width: 100%;
+}
+
+#img{
+  width: 100%;
+}
+
+#text-overlay{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(0, 43, 128);
+  color: #fff;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.rowhead{
+  clear: both;
+  border-top: 1px solid;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.col img{
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.row{
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.col{
+  background-color: #f7f7f7;
+}
+
+.col-inner{
+  padding: 20px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 680px){
+  nav {
+    position: relative;
+  }
+  
+  nav a {
+    color: rgb(0, 43, 128);
+    padding: 14px 16px;
+  }
+  
+  nav ul li{
+    float: left;
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+
+  ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 14px 16px;
+  }
+  
+  nav #myLinks {
+    display: block;
+    float: right;
+    background: none;
+    color: #0b3f9d;
+    clear: both;
+    margin-right: 10%;
+  }
+  
+  nav a.icon {
+    display: none;
+  }
+
+  ul li a:hover {
+    color: #0b3f9d;
+    background: none;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+  
+  #wrap{
+    margin: 0% 10% 0% 10%;
+  }
+  
+  .col{
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    background-color: #f7f7f7;
+    height: auto;
+  }
+  
+  .col-inner-img{
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 1050px){
+  html{
+  font-size: 22px; 
+  }
+  
+  .blue-background{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      to top,
+      white 0%,
+      white 50%,
+      #002b80 50%,
+      #002b80 100%
+    );
+  }
+  
+  
+  #row {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    margin: 0% 10% 0% 10%;
+  }
+  
+  #text-overlay{
+    position: absolute;
+    width: 400px;
+    height: 275px;
+    text-align: center;
+    padding: 10px;
+    bottom: 6px;
+    right: 0;
+    background-color: rgb(0, 43, 128, 0.7);
+    color: #fff;
+  }
+
+  .col{
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    background-color: #f7f7f7;
+    height: 100%;
+  }
+
+  .col-inner-img{
+    height: 230px;
+  }
+}
+
+
+/******* Steph's CSS *******/
+
+.form-background{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to top,
+    white 0%,
+    white 50%,
+    #002b80 50%,
+    #002b80 100%
+  );
+} 
+/*The background display of form*/
+.form-body{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  height: 500px;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+} 
+
+/*Form*/
+.logo-container{
+	background-color: #004d99;
+	color: white;
+	border-radius: auto-fill;
+	height: auto;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+    	
+	
+}
+
+.form-textarea {
+	width: 80%;
+	max-width: ; 
+	height: 48px;
+	border: none;
+	line-height: 150%;
+	resize: vertical;
+	padding: 8px;
+	background-color: #bfbfbf;
+	color: #002b80;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	
+}
+form{
+  max-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+input{
+  box-sizing: border-box;
+  max-width: 200px;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+input, textarea{
+  padding: 8px;
+  max-width: 200px;
+  background-color: #bfbfbf;
+  color: #002b80;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+
+/******* Media Query *******/
+@media only screen and (max-width: 600px){
+   .form-body {
+	  flex-direction: column;
+	  width: 90%;
+	  padding: 10px;
+	  
+    }  
+	
+}
+@media (min-width: 1024px) {
+    .form-body {
+        font-size: 120%; 
+    }
+	
+}
+
+
+
+/******* End of Steph's CSS *******/
+
+
+/* CSS for isud.html *\
+
+/* Grid container for event cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Event card styles */
+.event-card {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.event-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+  .event-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
