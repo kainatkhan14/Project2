@@ -295,7 +295,7 @@ footer img {
 }
 
 
-/******* Steph's CSS *******/
+/******* Form CSS *******/
 
 .form-background{
   margin: 0;
@@ -305,7 +305,7 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
+  background-image: linear-gradient(
     to top,
     white 0%,
     white 50%,
@@ -316,7 +316,7 @@ footer img {
 /*The background display of form*/
 .form-body{
   background: white;
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -327,85 +327,30 @@ footer img {
   padding: 20px;
   margin: 20px auto;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  
+  h2 {
+	  font-size: 30px;
+	  text-align: center;
+	  margin-bottom: 16px;
+  }
+  p {
+	 color:; 
+	 font-size: 16px;
+	 line-height: 1.5;
+	 margin-bottom: 32px;
+  }
+  form {
+	  
+	  
+  }
+  .form-element{
+	  
+  }
 } 
 
-/*Form*/
-.logo-container{
-	background-color: #004d99;
-	color: white;
-	border-radius: auto-fill;
-	height: auto;
-	width: 100%;
-	max-width: 600px;
-	margin: 0 auto;
-    	
-	
-}
-
-.form-textarea {
-	width: 80%;
-	max-width: ; 
-	height: 48px;
-	border: none;
-	line-height: 150%;
-	resize: vertical;
-	padding: 8px;
-	background-color: #bfbfbf;
-	color: #002b80;
-	letter-spacing: 1px;
-	border-radius: 5px;
-	
-}
-form{
-  max-width: 300px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-}
-
-input{
-  box-sizing: border-box;
-  max-width: 200px;
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border-radius: 4px;
-}
-
-input, textarea{
-  padding: 8px;
-  max-width: 200px;
-  background-color: #bfbfbf;
-  color: #002b80;
-  letter-spacing: 1px;
-  border-radius: 5px;
-}
 
 
-/******* Media Query *******/
-@media only screen and (max-width: 600px){
-   .form-body {
-	  flex-direction: column;
-	  width: 90%;
-	  padding: 10px;
-	  
-    }  
-	
-}
-@media (min-width: 1024px) {
-    .form-body {
-        font-size: 120%; 
-    }
-	
-}
-
-
-
-/******* End of Steph's CSS *******/
+/******* End of Form CSS *******/
 
 
 /* CSS for isud.html *\
