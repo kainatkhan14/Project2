@@ -334,19 +334,21 @@ footer img {
 	  margin-bottom: 16px;
   }
   p {
-	 color:; 
+	 color:#000000; 
 	 font-size: 16px;
 	 line-height: 1.5;
 	 margin-bottom: 32px;
   }
   form {
-	  
+	display: grid;
+    grid-template-columns: 1fr;
+	grid-gap: 16px;
 	  
   }
   .form-element{
 	  
   }
-  .submit-button{
+  #submit-button{
 	grid-column: 1 / -1;
 	text-align: right;
 
