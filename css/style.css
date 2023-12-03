@@ -314,14 +314,13 @@ footer img {
   );
 } 
 /*The background display of form*/
-.form-body{
+.container{
   background: white;
   display: grid;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  height: 500px;
+  height: 600px;
   width: 80%;
   max-width: 600px;
   padding: 20px;
@@ -331,7 +330,7 @@ footer img {
   h2 {
 	  font-size: 30px;
 	  text-align: center;
-	  margin-bottom: 16px;
+	  margin-bottom: 5px;
   }
   p {
 	 color:#000000; 
@@ -343,10 +342,33 @@ footer img {
 	display: grid;
     grid-template-columns: 1fr;
 	grid-gap: 16px;
+	
+	&.full{
+		grid-column: 1/-1;
+	}
+	label{
+		display:block;
+		margin-bottom:5px;
+		color:#888;
+		font-size:14px;
+	}
 	  
   }
   .form-element{
+	  appearance: none;
+	  outline:none;
+	  border:none;
 	  
+	  display:block;
+	  width:100%;
+	  
+	  border-radius:8px;
+	  padding: 12px 16px;
+	  background-color: #F3F3F3;
+  }
+  textarea{
+	  resize: none;
+	  min-height: 100px;
   }
   #submit-button{
 	grid-column: 1 / -1;
