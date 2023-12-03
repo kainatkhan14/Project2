@@ -337,8 +337,33 @@ footer img {
 	margin-bottom:5px;
 	
 }
-  
 
+.container p{
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 16px;
+}
+
+.container form{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 16px;
+	
+	&.full{
+		grid-column: 1/-1;
+	}
+	
+	@media(min-width: 768px) {
+		grid-template-columns: repeat(2,1fr);
+	}
+	
+	.form-group{
+		&.full{
+			grid-column: 1/1fr;
+		}
+	}
+}
 
 
 /******* End of Form CSS *******/
