@@ -332,6 +332,7 @@ footer img {
 }
 
 .container h2{
+	font-family: 'Rubik',sans-serif, 'PT Sans', sans-serif, 'Roboto Mono', monospace;
 	font-size: 30px;
 	text-align: center;
 	margin-top: 5px;
@@ -341,9 +342,12 @@ footer img {
 
 .container p{
 	color: #000000;
+	font-family: 'PT Sans', 'Rubik',sans-serif, sans-serif, 'Roboto Mono', monospace;
 	font-size: 16px;
 	line-height: 1.5;
-	margin-bottom: 2px;
+	margin-bottom: 0;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .container form{
@@ -393,6 +397,7 @@ footer img {
 	border-radius: 8px;
 	outline: none;
 	transition: background-color 0.4s;
+	font-family: 'Roboto Mono', monospace, 'PT Sans', 'Rubik',sans-serif, sans-serif;
 	
 	&:focus{
 		background-color: #e0e0e0;
@@ -413,6 +418,7 @@ footer img {
 	border: 1px solid #ddd;
 	border-radius: 8px;
 	outline: none;
+	font-family: 'Roboto Mono', monospace, 'PT Sans', 'Rubik',sans-serif, sans-serif;
 	transition: background-color: 0.4s;
 	
 	&:focus{
