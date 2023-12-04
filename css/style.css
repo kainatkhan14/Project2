@@ -398,7 +398,9 @@ footer img {
 		background-color: #e0e0e0;
 	}
 }
-
+.container #name{
+	margin-top: 0;
+}
 .container textarea{
 	resize: none;
 	min-height: 100px;
