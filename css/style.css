@@ -320,6 +320,7 @@ footer img {
   display: grid;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 15px;
   height: 600px;
   width: 80%;
@@ -342,17 +343,25 @@ footer img {
 	color: #000000;
 	font-size: 16px;
 	line-height: 1.5;
-	margin-bottom: 16px;
+	margin-bottom: 2px;
 }
 
 .container form{
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	grid-template-columns: 1fr;
 	grid-gap: 16px;
 	
 	&.full{
 		grid-column: 1/-1;
 	}
+	label{
+	  display: block;
+	  margin-bottom: 5px;
+	  color: #888;
+	  font-size: 14px;
+	}	
 	
 	@media(min-width: 768px) {
 		grid-template-columns: repeat(2,1fr);
@@ -362,10 +371,94 @@ footer img {
 		&.full{
 			grid-column: 1/1fr;
 		}
+		label{
+			display: block;
+			margin-bottom: 5px;
+			color: #888;
+			font-size: 14px;
+		}
 	}
 }
 
+.container #name,
+.container #email,
+.container #message{
+	width: calc(100% - 32px);
+	max-width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 12px 16px;
+	background-color: #f6f6f6;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	outline: none;
+	transition: background-color 0.4s;
+	
+	&:focus{
+		background-color: #e0e0e0;
+	}
+}
 
+.container textarea{
+	resize: none;
+	min-height: 100px;
+	width: calc(100% - 32px);
+	max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 12px 16px;
+	background-color: #f6f6f6;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	outline: none;
+	transition: background-color: 0.4s;
+	
+	&:focus{
+		background-color: #e0e0e0;
+	}
+}
+
+/* Larger Screens*/
+@media(min-width: 1600px){
+	.container #name,
+	.container #email,
+	.container #message{
+		width: calc(100% - 100px);
+	}
+}
+.container #submit-button{
+	grid-column: 1/-1;
+	text-align: right;
+	
+	input[type="submit"]{
+		appearance: none;
+		border: none;
+		outline:none;
+		background: none;
+		padding: 12px 16px;
+		background-color: #003399;
+		border-radius: 8px;
+		color: #FFF;
+		cursor: pointer;
+		transition: 0.4s;
+		
+		
+		&:hover{
+			background-color: #3377ff;
+		}
+	}
+	
+	@media(min-width: 768px){
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+	
+	@media (min-width: 1042px){
+		padding-left: 128px;
+		padding-right: 128px;
+	}
+	
+}
 /******* End of Form CSS *******/
 
 
