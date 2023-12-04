@@ -101,6 +101,8 @@ ul li a:hover {
 
 #logo{
   margin-left: 10%;
+  width: 140px;
+  height: auto;
 }
 
 footer{
@@ -340,6 +342,9 @@ footer img {
 	text-align: center;
 	margin-top: 5px;
 	margin-bottom:5px;
+	border-bottom: 2px solid #002b80;
+	line-height: 1.5;
+	font-weight: bold;
 	
 }
 
