@@ -364,10 +364,20 @@ footer img {
 	align-items: center;
 	grid-template-columns: 1fr;
 	grid-gap: 16px;
-	
-	&.full{
-		grid-column: 1/-1;
-	}
+}
+
+.container form.full{
+	grid-column: 1/-1;
+}
+
+
+/*
+.container form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	grid-template-columns: 1fr;
+	grid-gap: 16px;
 	label{
 	  display: block;
 	  margin-bottom: 5px;
@@ -391,7 +401,7 @@ footer img {
 		}
 	}
 }
-
+*/
 .container #name,
 .container #email,
 .container #message{
