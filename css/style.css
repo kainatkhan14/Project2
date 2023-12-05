@@ -447,7 +447,37 @@ footer img {
   }
 }
 
+/* .container #submit-button CSS */
+.container #submit-button input[type="submit"] {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 12px 16px;
+  background-color: #003399;
+  border-radius: 8px;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.4s;
+}
 
+.container #submit-button input[type="submit"]:hover {
+  background-color: #3377ff;
+}
+
+@media (min-width: 768px) {
+  .container #submit-button {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media (min-width: 1042px) {
+  .container #submit-button {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}
 
 /*
 .container form{
