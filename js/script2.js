@@ -77,3 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+  
+  // Validation functions with callbacks
+  function validateName(name, callback) {
+    setTimeout(function() {
+      const isValid = name.trim() !== '';
+      callback(isValid);
+    }, 0);
+  }
