@@ -394,6 +394,28 @@ footer img {
   font-size: 14px;
 }
 
+/* .container #name, .container #email, .container #message CSS */
+.container #name,
+.container #email,
+.container #message {
+  width: calc(100% - 32px);
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: background-color 0.4s;
+  font-family: 'Roboto Mono', monospace, 'PT Sans', 'Rubik', sans-serif, sans-serif;
+}
+
+.container #name:focus,
+.container #email:focus,
+.container #message:focus {
+  background-color: #e0e0e0;
+}
 
 
 /*
