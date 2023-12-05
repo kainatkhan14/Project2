@@ -103,4 +103,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 0);
   }
   
- 
+  // Display validation error message
+  function displayValidationError(message) {
+    // Update the DOM to display the error message
+    alert(message); 
+  }
+});
