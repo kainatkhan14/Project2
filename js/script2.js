@@ -46,3 +46,23 @@ document.addEventListener('DOMContentLoaded', function() {
   
   form.addEventListener('submit', function(event) {
     event.preventDefault();
+	
+    // Validate the form fields asynchronously
+    validateName(nameInput.value, function(isValidName) {
+      if (!isValidName) {
+        displayValidationError('Please enter a valid name.');
+        return;
+      }	
+	  
+
+      validateEmail(emailInput.value, function(isValidEmail) {
+        if (!isValidEmail) {
+          displayValidationError('Please enter a valid email address.');
+          return;
+        }
+
+        validateMessage(messageInput.value, function(isValidMessage) {
+          if (!isValidMessage) {
+            displayValidationError('Please enter a message.');
+            return;
+          }
