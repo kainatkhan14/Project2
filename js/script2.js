@@ -66,3 +66,14 @@ document.addEventListener('DOMContentLoaded', function() {
             displayValidationError('Please enter a message.');
             return;
           }
+
+          // If all fields are valid, proceed with form submission or other actions
+          console.log('Form submitted successfully!');
+          // Add your AJAX call or Fetch API logic here
+
+          // Optionally, reset the form after submission
+          form.reset();
+        });
+      });
+    });
+  });
