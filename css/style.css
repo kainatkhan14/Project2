@@ -370,6 +370,31 @@ footer img {
 	grid-column: 1/-1;
 }
 
+.container form label{
+	display: block;
+	margin-bottom: 5px;
+	color: #888;
+	font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .container form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form-group.full {
+  grid-column: 1/1fr;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #888;
+  font-size: 14px;
+}
+
+
 
 /*
 .container form{
