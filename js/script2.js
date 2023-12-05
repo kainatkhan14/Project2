@@ -85,3 +85,12 @@ document.addEventListener('DOMContentLoaded', function() {
       callback(isValid);
     }, 0);
   }
+  
+
+  function validateEmail(email, callback) {
+    // Simulating asynchronous validation
+    setTimeout(function() {
+      const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      callback(isValid);
+    }, 0);
+  }
