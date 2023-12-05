@@ -94,3 +94,13 @@ document.addEventListener('DOMContentLoaded', function() {
       callback(isValid);
     }, 0);
   }
+
+  function validateMessage(message, callback) {
+    // Simulating asynchronous validation
+    setTimeout(function() {
+      const isValid = message.trim() !== '';
+      callback(isValid);
+    }, 0);
+  }
+  
+ 
