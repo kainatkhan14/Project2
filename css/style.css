@@ -384,7 +384,7 @@ footer img {
 }
 
 .form-group.full {
-  grid-column: 1/1fr;
+  grid-column: 1/ -1;
 }
 
 .form-group label {
@@ -441,12 +441,11 @@ footer img {
   outline: none;
   font-family: 'Roboto Mono', monospace, 'PT Sans', 'Rubik', sans-serif, sans-serif;
   transition: background-color 0.4s;
-
-  &:focus {
-    background-color: #e0e0e0;
-  }
 }
 
+.container textarea:focus{
+	background-color: #e0e0e0;
+}
 /* .container #submit-button CSS */
 .container #submit-button input[type="submit"] {
   appearance: none;

@@ -107,5 +107,4 @@ document.addEventListener('DOMContentLoaded', function() {
   function displayValidationError(message) {
     // Update the DOM to display the error message
     alert(message); 
-  }
-});
+  };
