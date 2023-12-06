@@ -384,7 +384,7 @@ footer img {
 }
 
 .form-group.full {
-  grid-column: 1/1fr;
+  grid-column: 1/ -1;
 }
 
 .form-group label {
